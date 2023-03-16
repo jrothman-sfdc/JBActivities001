@@ -9,6 +9,7 @@ var request     = require('request');
 var config      = require('./config/default');
 var parseString = require('xml2js').parseString;
 var fs = require('fs');
+const cors = require('cors');
 
 var configjson  = require('./public/ixn/activities/generic-activity/config.json');
 var numSteps = process.env['CA_NUM_STEPS'] || 1;  
